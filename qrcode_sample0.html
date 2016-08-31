@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.qrcode.min.js"></script>
+    <script type="text/JavaScript"> 
+    //$(function(){
+    //  $("#coffee").html("");
+    //  $("#coffee").qrcode({text:"http://plugout.hatenablog.com/"}); 
+    //});
+
+    function onButtonClick() {
+      var txt = document.forms.id_form1.id_textBox1.value;
+      $("#coffee").html("");
+      $("#coffee").qrcode(txt); 
+    }
+    </script>
+  </head>
+  <body>
+    <form name="form1" id="id_form1" action="">
+      <input name="textBox1" id="id_textBox1" type="text" value="" />
+      <input type="button" value="Exec" onclick="onButtonClick();" />
+    </form>
+    <hr/>
+    <div id="coffee"></div>
+  </body>
+</html>
