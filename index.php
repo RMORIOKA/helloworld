@@ -1,1 +1,1 @@
-﻿<?php echo file_get_contents('qrcode_sample0.html'); ?>
+﻿<?php echo file_get_contents('gmapsample2.html'); ?>
